@@ -1,0 +1,57 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+body
+{
+    background: papayawhip;
+}
+.container
+{
+    display: grid;
+    grid-template-areas:
+    "header header"
+    "Left Right"
+    "Footer Footer";
+}
+.Header
+{
+grid-area: header;
+text-align: center;
+font-size: 2vw;
+}
+.Side-Left
+{
+    margin-top: 100px;
+    grid-area: Left;
+    width: 50%;
+    font-size: 1.5vw;
+}
+.Side-Right
+{
+    grid-area: Right;
+    width: 50%;
+}
+.Side-Right img
+{
+    width: 100%;
+    transform: rotate(50deg);
+    margin-top: 200px;
+}
+.Side-Right button
+{
+padding: 15px 25px;
+border-radius: 15px;
+}
+.Footer
+{
+    grid-area: Footer;
+    text-align: center;
+}
+.Footer p
+{
+    font-size: 1.5vw;
+    margin-top: 100px;
+    background-color: aliceblue;
+}
